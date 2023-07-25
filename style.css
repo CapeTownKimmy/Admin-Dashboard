@@ -76,6 +76,8 @@ h1 {
     display: flex;
     align-items: center;
     gap: .5rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
 }
 
 .dashboard-icon {
@@ -84,7 +86,6 @@ h1 {
 
 .icon {
     filter: invert();
-    border: 1px solid chocolate;
 }
 
 /* LINKS */
@@ -162,7 +163,15 @@ header {
 }
 
 .profile-bar img {
-    width: 2rem;
+    width: 3rem;
+}
+
+.profile-bar .icon {
+    width: 32px;
+}
+
+.profile-bar h4 {
+    font-weight: bold;
 }
 
 /* USER BAR STYLING */
@@ -184,11 +193,16 @@ header {
 
 .user-bar p {
     align-self: flex-end;
+    font-size: small;
+    padding-bottom: 0.1rem;
 }
 
 .user-bar h3 {
     grid-column: 2 / -1;
     align-self: flex-start;
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 0.1rem;
 }
 
 /* BUTTON BAR STYLING */
@@ -334,7 +348,9 @@ aside {
 
 .trending-container img {
     /* border: 1px solid blue; */
-    width: 4rem;
+    width: 3.5rem;
+    padding: .6rem 0;
+    filter: drop-shadow(2px 2px 2px #c9c9c9);
 }
 
 .trending-users {
@@ -350,10 +366,12 @@ aside {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: small;
+    padding-bottom: .1rem;
 }
 .trending-users p {
     font-family: 'Montserrat', sans-serif;
     font-size: small;
+    padding-top: .1rem;
 }
 
 
