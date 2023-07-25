@@ -111,12 +111,13 @@ nav {
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: .5rem 0;
+    padding-left: 1rem;
 }
 
-/* .menu,
-.settings {
-    border: 1px solid red;
-} */
+.links a:hover {
+    color: chocolate;
+    scale: 1.05;
+}
 
 
 /* -*-*-*-*-*-*-*-*-*- HEADER STYLING -*-*-*-*-*-*-*-*-*-  */
@@ -126,7 +127,7 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* gap: 2rem; */
+    gap: 1rem;
     padding: 1rem 2.5rem 1.5rem 2rem;
     /* box-shadow: 2px 2px 8px #2e5458; */
     filter: drop-shadow(0px 3px 6px #2e5458);
@@ -169,12 +170,29 @@ header {
     width: 3rem;
 }
 
+.profile-bar img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 .profile-bar .icon {
     width: 32px;
 }
 
+.profile-bar .icon:hover {
+    scale: 1.1;
+    cursor: pointer;
+    filter: invert(41%) sepia(99%) saturate(692%) hue-rotate(351deg) brightness(92%) contrast(85%);
+}
+
 .profile-bar h4 {
     font-weight: bold;
+}
+
+.profile-bar h4:hover {
+    scale: 1.1;
+    cursor: pointer;
+    color: chocolate;
 }
 
 /* USER BAR STYLING */
@@ -195,6 +213,11 @@ header {
     padding-left: 1rem;
 }
 
+.user-bar img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 .user-bar p {
     align-self: flex-end;
     font-size: small;
@@ -208,6 +231,12 @@ header {
     font-weight: bold;
     padding-top: 0.1rem;
     letter-spacing: 1px;
+}
+
+.user-bar h3:hover {
+    scale: 1.03;
+    cursor: pointer;
+    color: chocolate;
 }
 
 /* BUTTON BAR STYLING */
@@ -232,6 +261,7 @@ header {
 .button-bar button:hover {
     border: 2px solid whitesmoke;
     cursor: pointer;
+    scale: 1.15;
 }
 
 
@@ -245,7 +275,7 @@ article {
 h2 {
     /* border: 1px solid black; */
     font-family: 'Montserrat', sans-serif;
-    font-size: larger;
+    font-size: 1.25rem;
     font-weight: bold;
     padding-left: .5rem;
 }
@@ -268,6 +298,12 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     box-shadow: 4px 4px 8px #2e5458;
+}
+
+.card:hover {
+    scale: 1.03;
+    cursor: pointer;
+    border-left: .5rem solid #d2691e;
 }
 
 .card h4 {
@@ -327,6 +363,13 @@ aside {
     padding: 1rem .3rem 1rem .3rem;
 }
 
+.card-text:hover {
+    scale: 1.03;
+    cursor: pointer;
+    border: 1px solid chocolate;
+    border-radius: 1rem;
+}
+
 .border {
     border-bottom: 1px solid #bbc7c6;
 }
@@ -371,6 +414,14 @@ aside {
     align-items: center;
     column-gap: 1rem;
 }
+
+.trending-users:hover {
+    scale: 1.03;
+    cursor: pointer;
+    border: 1px solid chocolate;
+    border-radius: 1rem;
+}
+
 .trending-users h6 {
     /* border: 1px solid blue; */
     font-family: 'Montserrat', sans-serif;
